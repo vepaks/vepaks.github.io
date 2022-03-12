@@ -55,7 +55,9 @@
     justify-content: center;
 }
 
-.list_marge .list-group {
+.list-group {
+    display: flex;
+    justify-content: center;
     margin-top: 16px;
     text-align: center;
     min-width: 500px;
