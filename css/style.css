@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -6,66 +7,19 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.info-header {
-    padding-top: 30px;
-    color: #dedede;
-    text-align: center;
-    font-size: 16px;
-}
-
-.header-tittle {
-    margin-top: 13px;
-    font-size: 40px;
-    line-height: 24px;
-    font-weight: 900;
-    /*text-transform: uppercase;*/
-    color: #444444;
-    text-align: center;
-}
-
-.header_info_wareper {
-    display: flex;
-    justify-content: center;
-    margin-top: 13px;
-    font-size: 16px;
-    color: #817e7e;
-}
-
-.header_info_wareper .header-discription {
-    padding-inline: 12px;
-    font-size: 15px;
-    font-weight: 300;
-    color: #4a4a4a;
-    text-align: center;
-}
-
-
-.navbar {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-}
-
-.navbar .btn {
-    font-size: 18px;
-}
-
-.list_marge {
-    display: flex;
-    justify-content: center;
-}
-
-.list-group {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-    text-align: center;
-    min-width: 500px;
+.text-center{
+    color: #444444
 
 }
 
-.code_wraper {
-    margin-top: 16px;
-    text-align: center;
-    min-width: 600px;
+.header-info {
+    margin-top: 25px;
+}
+
+.container {
+    max-width: 840px;
+}
+
+.container-content {
+    margin-top: 34px;
 }
