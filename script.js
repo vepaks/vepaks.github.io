@@ -1,5 +1,5 @@
 
-const greetingContainer = document.querySelector("#quote-container"),
+const greetingContainer = document.querySelector("#greeting-container"),
   greetingText = document.querySelector("#greeting"),
   copyBtn = document.querySelector("#copy"),
   newGreetingBtn = document.querySelector("#new-greeting"),
