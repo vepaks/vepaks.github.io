@@ -1,327 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>SoftUni</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings Generator</title>
+    <link rel="icon" type="image/png" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css"/>
-</head>
-<body>
-<div class="container">
-    <div class="header">
-        <div class="left">
-            <img src="images/logos/holiday.png"/>
+    <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
+    <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="greeting-container" id="quote-container">
+      <!--        Quote text-->
+      <div class="greeting-text">
+        <!--        <i class="fas fa-quote-left">-->
+        <span id="greeting"></span>
+        <!--          Buttons-->
+        <div class="buttons-container">
+          <button class="copy-button" id="copy" title="Copy">
+            копирай
+          </button>
+          <button id="new-greeting">нов поздрав</button>
         </div>
-
-        <div class="center">
-            <h1>
-                Целият код на задачите и упражненията, както и кодът на тази
-                страница,<br/>
-                са писани от мен <b>по време на обучението ми</b> в SoftUni.
-            </h1>
-        </div>
-
-        <div class="right">
-            <h2>Камбуров А.И. 2022-2023г.</h2>
-        </div>
+      </div>
     </div>
-
-    <div class="nav-items justify-content-center">
-        <ul class="nav">
-            <li class="nav-item dropdown disabled">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                >
-                    Programming Basics</a
-                >
-                <div class="dropdown-menu">
-                    <a class="dropdown-item basics" href="#"
-                    >First Steps In Coding - Lab
-                        <span class="badge badge-primary badge-pill">9</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >First Steps In Coding - Exercise
-                        <span class="badge badge-primary badge-pill">9</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Conditional Statements - Lab
-                        <span class="badge badge-primary badge-pill">7</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Conditional Statements - Exercise
-                        <span class="badge badge-primary badge-pill">8</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Conditional Statements Advanced - Lab
-                        <span class="badge badge-primary badge-pill">12</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Conditional Statements Advanced - Exercise
-                        <span class="badge badge-primary badge-pill">9</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >For Loop - Lab
-                        <span class="badge badge-primary badge-pill">8</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >For Loop - Exercise
-                        <span class="badge badge-primary badge-pill">8</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >While Loop - Exercise
-                        <span class="badge badge-primary badge-pill">7</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Exam preparation
-                        <span class="badge badge-primary badge-pill">6</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Exam preparation 2
-                        <span class="badge badge-primary badge-pill">6</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-
-        <ul class="nav justify-content-center">
-            <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                >
-                    Programming Fundamentals</a
-                >
-                <div class="dropdown-menu">
-                    <a class="dropdown-item basics" href="#"
-                    >Basic Syntax, Conditional Statements and Loops - Lab
-                        <span class="badge badge-primary badge-pill">11</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Basic Syntax, Conditional Statements and Loops - Expacise
-                        <span class="badge badge-primary badge-pill">9</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Data Types and Variables - Lab
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Data Types and Variables - Exercise
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Arrays - Exercise
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Functions - Lab
-                        <span class="badge badge-primary badge-pill">6</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Functions - Exercise
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Arrays Advanced - Exercise
-                        <span class="badge badge-primary badge-pill">8</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >While Loop - Exercise
-                        <span class="badge badge-primary badge-pill">7</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >JSON
-                        <span class="badge badge-primary badge-pill">6</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Objects and Classes
-                        <span class="badge badge-primary badge-pill">9</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Associative Arrays
-                        <span class="badge badge-primary badge-pill">6</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Associative Arrays - Exercise
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Text Processing - Lab
-                        <span class="badge badge-primary badge-pill">4</span>
-                    </a>
-                    <a class="dropdown-item" href="#"
-                    >Text Processing - Exercise
-                        <span class="badge badge-primary badge-pill">10</span>
-                    </a>
-                </div>
-            </li>
-        </ul>
-
-        <ul class="nav justify-content-center">
-            <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                >JS Advanced</a
-                >
-                <!--            <div class="dropdown-menu">-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--            </div>-->
-            </li>
-        </ul>
-
-        <ul class="nav justify-content-center">
-            <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                >JS Web</a
-                >
-                <!--            <div class="dropdown-menu">-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--            </div>-->
-            </li>
-        </ul>
-
-        <ul class="nav justify-content-center">
-            <li class="nav-item dropdown">
-                <a
-                        class="nav-link dropdown-toggle"
-                        data-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                >Front-End</a
-                >
-                <!--            <div class="dropdown-menu">-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--              <a class="dropdown-item" href="#"></a>-->
-                <!--            </div>-->
-            </li>
-        </ul>
-    </div>
-
-    <div class="header-info">
-        <p>
-            Условията на задачите от учебният план на SoftUni са в сайта на
-            университета.
-            <a href="https://softuni.bg/curriculum" target="”_blank”">Тук-></a>
-        </p>
-    </div>
-</div>
-
-<div class="container container-nav"></div>
-
-<div class="container content">
-    <div class="container menu-left card text-center">
-        <ul class="nav nav-menu-left flex-column">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Hello SoftUni.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Nums 1...10.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Square Area.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Inches to Centimet.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Greeting by Name.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Concatenate Data.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Projects Creation.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pet Shop.js</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Yard Greening.js</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="container container-content">
-        <div class="card text-center">
-            <div class="card-header">JavaScript Code</div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-
-                <div class="gist">
-                    <div class="gist-item show">
-                        <script src="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f.js"></script>
-                    </div>
-                    <div class="gist-item hide">
-                        <script src="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f.js"></script>
-                    </div>
-                    <div class="gist-item hide">
-                        <script src="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f.js"></script>
-                    </div>
-                    <div class="gist-item hide">
-                        <script src="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f.js"></script>
-                    </div>
-                </div>
-
-                <div class="download show">
-                    <a
-                            href="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f/archive/405f3110a4f1d4403ad5920f9d471e72401daf5d.zip"
-                            class="btn btn-link"
-                    >Изтегли</a
-                    >
-                </div>
-                <div class="download hide">
-                    <a
-                            href="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f/archive/405f3110a4f1d4403ad5920f9d471e72401daf5d.zip"
-                            class="btn btn-light"
-                    >Изтегли</a
-                    >
-                </div>
-                <div class="download hide">
-                    <a
-                            href="https://gist.github.com/vepaks/2bf06585ef5a3a6518a09fb94c04160f/archive/405f3110a4f1d4403ad5920f9d471e72401daf5d.zip"
-                            class="btn btn-light"
-                    >Изтегли</a
-                    >
-                </div>
-            </div>
-            <div class="card-footer text-muted">Александър Камбуров 2022г.</div>
-        </div>
-    </div>
-</div>
-</body>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/script.js"></script>
+<!--    Loader-->
+    <div class="loader" id="loader"></div>
+    <!-- Script -->
+    <script src="greetings.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
