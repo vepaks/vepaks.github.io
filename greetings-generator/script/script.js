@@ -1,4 +1,4 @@
-
+import { allGreetingsFromLocalFile } from "./greetings.js";
 
 
 const greetingContainer = document.querySelector("#greeting-container"),
@@ -6,6 +6,7 @@ const greetingContainer = document.querySelector("#greeting-container"),
   copyBtn = document.querySelector("#copy"),
   newGreetingBtn = document.querySelector("#new-greeting"),
   loaderSpinner = document.querySelector('#loader');
+
 
 let allGreetingsFromServer = [];
 function showLoadingSpinner() {
@@ -24,6 +25,14 @@ function showRandomGreetingFromServer() {
   greetingTextInSiteBubble.textContent = randomGreetingFromArr.greeting;
   hideLoadingSpinner();
 }
+
+
+function showRandomGreetingFromLocalFile() {
+  let randomGreetingFromArr;
+  randomGreetingFromArr = allGreetingsFromLocalFile[Math.floor(Math.random() * allGreetingsFromLocalFile.length)];
+  greetingTextInSiteBubble.textContent = randomGreetingFromArr;
+}
+
 
 async function getGreetingsFromServer() {
   showLoadingSpinner();
@@ -49,6 +58,7 @@ const copyGreetingTextToClipboard = async () => {
 
 //Event Listeners
 copyBtn.addEventListener('click', copyGreetingTextToClipboard);
-newGreetingBtn.addEventListener("click", getGreetingsFromServer);
+newGreetingBtn.addEventListener("click", showRandomGreetingFromLocalFile);
 // On load
-getGreetingsFromServer();
+showRandomGreetingFromLocalFile()
+// getGreetingsFromServer();
