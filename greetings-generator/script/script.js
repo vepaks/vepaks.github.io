@@ -1,5 +1,4 @@
-import { allGreetingsFromLocalFile } from "./greetings.js";
-
+import { localDataRandomGenerator } from "../data/localData.js";
 
 const greetingContainer = document.querySelector("#greeting-container"),
   greetingTextInSiteBubble = document.querySelector("#greeting"),
@@ -8,7 +7,7 @@ const greetingContainer = document.querySelector("#greeting-container"),
   loaderSpinner = document.querySelector('#loader');
 
 
-let allGreetingsFromServer = [];
+// let allGreetingsFromServer = [];
 function showLoadingSpinner() {
   loaderSpinner.hidden = false;
   greetingContainer.hidden = true;
@@ -17,36 +16,43 @@ function hideLoadingSpinner() {
   greetingContainer.hidden = false;
   loaderSpinner.hidden = true;
 }
-function showRandomGreetingFromServer() {
-  showLoadingSpinner();
-  const randomGreetingFromArr =
-    allGreetingsFromServer[Math.floor(Math.random() * allGreetingsFromServer.length)];
-  //Set greeting, Hide Loader (in randomGreetingFromArr have obj`s with key greeting)
-  greetingTextInSiteBubble.textContent = randomGreetingFromArr.greeting;
-  hideLoadingSpinner();
-}
 
+// async function getGreetingsFromServer to get data from server
+// function showRandomGreetingFromServer() {
+//   showLoadingSpinner();
+//   const randomGreetingFromArr =
+//     allGreetingsFromServer[Math.floor(Math.random() * allGreetingsFromServer.length)];
+//   //Set greeting, Hide Loader (in randomGreetingFromArr have obj`s with key greeting)
+//   greetingTextInSiteBubble.textContent = randomGreetingFromArr.greeting;
+//   hideLoadingSpinner();
+// }
 
 function showRandomGreetingFromLocalFile() {
-  let randomGreetingFromArr;
-  randomGreetingFromArr = allGreetingsFromLocalFile[Math.floor(Math.random() * allGreetingsFromLocalFile.length)];
-  greetingTextInSiteBubble.textContent = randomGreetingFromArr;
-}
-
-
-async function getGreetingsFromServer() {
   showLoadingSpinner();
-  const apiURL = "https://greetings-b3650-default-rtdb.firebaseio.com/.json";
-  try {
-    const response = await fetch(apiURL);
-    allGreetingsFromServer = await response.json();
-    copyBtn.textContent = 'копирай';
-    showRandomGreetingFromServer();
-  } catch (err) {
-    console.error(err);
-    throw new Error();
-  }
+  let randomGreetingFromArr;
+  randomGreetingFromArr = localDataRandomGenerator();
+  greetingTextInSiteBubble.textContent = randomGreetingFromArr.greeting;
+  hideLoadingSpinner();
+
 }
+
+//async function getGreetingsFromServer to get data from server
+
+// async function getGreetingsFromServer() {
+//   showLoadingSpinner();
+//   const apiURL = "https://greetings-b3650-default-rtdb.firebaseio.com/.json";
+//   try {
+//     const response = await fetch(apiURL);
+//     allGreetingsFromServer = await response.json();
+//     copyBtn.textContent = 'копирай';
+//     showRandomGreetingFromServer();
+//   } catch (err) {
+//     console.error(err);
+//     throw new Error();
+//   }
+// }
+
+//to change the text of the button to a smiley face
 const copyGreetingTextToClipboard = async () => {
   try {
     await navigator.clipboard.writeText(greetingTextInSiteBubble.innerHTML);
