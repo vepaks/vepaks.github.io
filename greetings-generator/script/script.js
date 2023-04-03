@@ -1,4 +1,6 @@
 
+
+
 const greetingContainer = document.querySelector("#greeting-container"),
   greetingTextInSiteBubble = document.querySelector("#greeting"),
   copyBtn = document.querySelector("#copy"),
@@ -25,7 +27,7 @@ function showRandomGreetingFromServer() {
 
 async function getGreetingsFromServer() {
   showLoadingSpinner();
-  const apiURL = "https://test-softuni-1-default-rtdb.firebaseio.com/.json";
+  const apiURL = "https://greetings-b3650-default-rtdb.firebaseio.com/.json";
   try {
     const response = await fetch(apiURL);
     allGreetingsFromServer = await response.json();
