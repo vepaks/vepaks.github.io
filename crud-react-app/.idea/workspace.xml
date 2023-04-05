@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4486b3-ed77-4b99-8364-d31cd8702e80" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-filter/app-filter.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-filter/app-filter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-info/app-info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app-info/app-info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-add-form/employees-add-form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-add-form/employees-add-form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-list-item/employeers-list-item.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-list-item/employeers-list-item.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-list/employeers-list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/employeers-list/employeers-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-panel/search-panel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/search-panel/search-panel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/palette.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/previews.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dev/useInitial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,28 +45,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/vepaks/Documents/study/vepaks.github.io/crud-react-app&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/vepaks/Documents/study/vepaks.github.io/crud-react-app/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/vepaks/Documents/barierata",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/vepaks/Documents/study/vepaks.github.io/crud-react-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -124,6 +98,7 @@
       <workItem from="1680636313961" duration="268000" />
       <workItem from="1680636604300" duration="252000" />
       <workItem from="1680636867979" duration="3919000" />
+      <workItem from="1680676310593" duration="1841000" />
     </task>
     <servers />
   </component>
