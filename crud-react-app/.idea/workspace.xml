@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4486b3-ed77-4b99-8364-d31cd8702e80" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/employees-list/employees-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employeers-add-form/employees-add-form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/employees-add-form/employees-add-form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employeers-add-form/employees-add-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/employees-add-form/employees-add-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employeers-list-item/employeers-list-item.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/employeers-list-item/employeers-list-item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employeers-list/employeers-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/employees-list/employeers-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/employeers-list/employeers-list.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +60,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/vepaks/Documents/barierata",
+    "last_opened_file_path": "/home/vepaks/Documents/barierata/src",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -99,6 +106,7 @@
       <workItem from="1680636604300" duration="252000" />
       <workItem from="1680636867979" duration="3919000" />
       <workItem from="1680676310593" duration="1841000" />
+      <workItem from="1680695098963" duration="7616000" />
     </task>
     <servers />
   </component>
