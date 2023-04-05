@@ -9,7 +9,7 @@ const EmployeesAddForm = () => {
         <input
           type="text"
           className="form-control new-post-label"
-          placeholder="Как се казва?"
+          placeholder="Име на служителя"
         />
         <input
           type="number"
