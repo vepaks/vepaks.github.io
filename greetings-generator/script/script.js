@@ -61,10 +61,10 @@ const copyGreetingTextToClipboard = async () => {
     throw new Error();
   }
 };
-
 //Event Listeners
 copyBtn.addEventListener('click', copyGreetingTextToClipboard);
 newGreetingBtn.addEventListener("click", showRandomGreetingFromLocalFile);
 // On load
 showRandomGreetingFromLocalFile()
 // getGreetingsFromServer();
+
