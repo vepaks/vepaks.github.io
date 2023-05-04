@@ -6,7 +6,6 @@ const greetingContainer = document.querySelector("#greeting-container"),
   newGreetingBtn = document.querySelector("#new-greeting"),
   loaderSpinner = document.querySelector('#loader');
 
-
 // let allGreetingsFromServer = [];
 function showLoadingSpinner() {
   loaderSpinner.hidden = false;
@@ -33,7 +32,6 @@ function showRandomGreetingFromLocalFile() {
   randomGreetingFromArr = localDataRandomGenerator();
   greetingTextInSiteBubble.textContent = randomGreetingFromArr.greeting;
   hideLoadingSpinner();
-
 }
 
 //async function getGreetingsFromServer to get data from server
